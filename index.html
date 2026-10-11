@@ -1,1 +1,73 @@
-<p>NBA Edge is starting up. Check back in a few minutes.</p>
+<!doctype html><html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'>
+<meta name='theme-color' content='#0E1726'><meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+<meta name='apple-mobile-web-app-title' content='NBA Edge'>
+<link rel='manifest' href='manifest.webmanifest'><link rel='apple-touch-icon' href='icon-180.png'>
+<link rel='icon' href='icon-180.png'><title>Today · NBA Edge</title><link rel='preconnect' href='https://fonts.googleapis.com'><link href='https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;500;600;700&display=swap' rel='stylesheet'><style>
+:root{--bg:#0E1726;--panel:#16233A;--line:#263852;--fg:#F1F4F8;--muted:#A9B6C8;--soft:#C9D3E0;--amber:#F2A93B;--blue:#6CB4EE;--chip:#2A3A52}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Public Sans',-apple-system,'Segoe UI',sans-serif;
+  padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+a{color:var(--blue)}
+.wrap{max-width:720px;margin:0 auto;padding:16px 14px 40px}
+header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+.brand{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:28px;letter-spacing:.02em}
+nav{display:flex;gap:6px;margin:6px 0 14px;overflow-x:auto}
+nav a{color:var(--soft);text-decoration:none;padding:8px 12px;border-radius:999px;background:var(--panel);font-size:14px;white-space:nowrap;min-height:36px;display:inline-flex;align-items:center}
+nav a.on{background:var(--fg);color:var(--bg);font-weight:600}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:34px;line-height:1.05;margin:4px 0}
+h2{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;margin:0 0 8px}
+.sub{color:var(--muted);font-size:14px;margin:0 0 12px}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0 16px}
+.tile{background:var(--panel);border-radius:14px;padding:12px}
+.tile b{display:block;font-family:'Barlow Condensed',sans-serif;font-size:26px;line-height:1.1}
+.tile span{color:var(--muted);font-size:12px}
+.card{background:var(--panel);border-radius:18px;margin-bottom:12px;overflow:hidden}
+.card summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.card summary::-webkit-details-marker{display:none}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.match{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;line-height:1}
+.match small{color:var(--muted);font-size:18px;font-weight:600}
+.time{color:var(--muted);font-size:13px;font-weight:600}
+.line{display:flex;gap:14px;font-size:14px;flex-wrap:wrap}.line span{color:var(--muted)}
+.badge{border-radius:999px;padding:4px 11px;font-weight:700;font-size:12px;letter-spacing:.05em;white-space:nowrap}
+.over{background:var(--amber);color:#1A1206}.under{background:var(--blue);color:#0B1A2A}.none{background:var(--chip);color:var(--soft)}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12px;font-weight:600;border-radius:999px;padding:4px 9px;background:var(--chip);color:var(--soft)}
+.more{color:var(--blue);font-size:13px}
+details[open] .more{display:none}
+.body{padding:0 16px 16px;display:flex;flex-direction:column;gap:14px}
+.sec{border-top:1px solid var(--line);padding-top:12px}
+.legend{display:flex;gap:12px;font-size:12px;color:var(--muted);margin-bottom:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.meter{margin-bottom:10px}
+.meter .row{font-size:13px;margin-bottom:4px}.meter .row span{color:var(--muted)}
+.bar{height:7px;background:var(--line);border-radius:4px;margin-top:3px}
+.bar div{height:7px;border-radius:4px}
+.kv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;font-size:13px}
+.kv span{display:block;color:var(--muted);font-size:12px}
+.kv b{font-weight:600}
+.whistle{position:relative;height:9px;background:var(--line);border-radius:5px;margin:8px 0 4px}
+.whistle .mid{position:absolute;left:50%;top:-3px;width:2px;height:15px;background:var(--muted)}
+.whistle .fill{position:absolute;top:0;height:9px;border-radius:5px}
+.ends{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
+.nmu{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.nmu p{margin:3px 0;font-size:13px;color:var(--soft)}
+.nmu h3{margin:0 0 4px;font-size:15px}
+.hit{color:#7BD88F}.miss{color:#FF8A80}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600}
+.tablebox{overflow-x:auto}
+.prose p,.prose li{color:var(--soft);font-size:15px;line-height:1.55}
+.foot{color:var(--muted);font-size:12px;margin-top:26px;line-height:1.5}
+</style></head>
+<body><div class='wrap'><header><div class='brand'>NBA Edge</div><div class='time'>Updated Oct 11, 19:55 UTC</div></header>
+<nav><a href='index.html' class='on'>Today</a><a href='record.html' class=''>Season record</a><a href='about.html' class=''>How it works</a></nav><h1>Tonight's games</h1><p class='sub'>Sunday, October 11 · the travel, rest, referee and lineup picture behind every line</p><div class='tiles'><div class='tile'><b>0–0</b><span>Lean record this season</span></div><div class='tile'><b>–</b><span>Hit rate · break-even 52.4%</span></div><div class='tile'><b>54%</b><span>11-season history</span></div></div><p class='sub'>No regular-season games today.</p>
+<p class='foot'>Information and history only, not betting advice. 21+. Gambling problem? Call 1-800-GAMBLER.<br>
+Live data: ESPN. Historical data: hoopR-nba-data (SportsDataverse), CC BY 4.0.</p></div>
+<script>document.querySelectorAll('[data-utc]').forEach(function(e){var d=new Date(e.dataset.utc);
+if(!isNaN(d))e.textContent=d.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});});</script>
+</body></html>
