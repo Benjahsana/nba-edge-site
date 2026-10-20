@@ -63,17 +63,30 @@ th{color:var(--muted);font-weight:600}
 .tablebox{overflow-x:auto}
 .prose p,.prose li{color:var(--soft);font-size:15px;line-height:1.55}
 .foot{color:var(--muted);font-size:12px;margin-top:26px;line-height:1.5}
+.lu{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.lu h3{margin:0 0 4px;font-size:15px}
+.lu ul{list-style:none;margin:0;padding:0}
+.lu li{font-size:13px;color:var(--soft);padding:3px 0}
+.lu li s{color:var(--muted)}
+.st{font-size:11px;font-weight:700;border-radius:6px;padding:1px 6px;margin-right:6px;background:var(--chip);color:var(--soft)}
+.st.out{background:#5B2330;color:#FFC9C2}.st.q{background:#4A3A12;color:#F7D58A}
+.livebar{font-size:12px;color:var(--muted);margin:-4px 0 10px}
+.live{color:var(--amber);font-weight:700;font-size:13px}
 </style></head>
-<body><div class='wrap'><header><div class='brand'>NBA Edge</div><div class='time'>Updated Oct 20, 19:24 UTC</div></header>
-<nav><a href='index.html' class='on'>Today</a><a href='record.html' class=''>Season record</a><a href='about.html' class=''>How it works</a></nav><h1>Tonight's games</h1><p class='sub'>Tuesday, October 20 · the travel, rest, referee and lineup picture behind every line</p><div class='tiles'><div class='tile'><b>0–0</b><span>Lean record this season</span></div><div class='tile'><b>–</b><span>Hit rate · break-even 52.4%</span></div><div class='tile'><b>54%</b><span>11-season history</span></div></div><details class='card'><summary>
+<body><div class='wrap'><header><div class='brand'>NBA Edge</div><div class='time'>Updated Oct 20, 23:52 UTC</div></header>
+<nav><a href='index.html' class='on'>Today</a><a href='record.html' class=''>Season record</a><a href='about.html' class=''>How it works</a></nav><h1>Tonight's games</h1><p class='sub'>Tuesday, October 20 · the travel, rest, referee and lineup picture behind every line</p><p class='livebar' id='livebar'>Showing the latest hourly update.</p><div class='tiles'><div class='tile'><b>0–1</b><span>Lean record this season</span></div><div class='tile'><b>0.0%</b><span>Hit rate · break-even 52.4%</span></div><div class='tile'><b>54%</b><span>11-season history</span></div></div><details class='card' data-game-id='401909088' data-home='DET' data-away='BOS'><summary>
 <div class='row'><div class='match'>BOS <small>at</small> DET</div>
 <div class='time' data-utc='2026-10-20T19:00Z'></div></div>
 <div class='row'><div class='line'><div><span>Spread</span> DET +1.5</div><div><span>Total</span> 219.5</div></div>
 <span class='badge under'>UNDER</span></div>
 
-<span class='more'>Tap for details</span></summary>
+<div class='live live-status'></div>
+<div class='row'><b class='miss'>Lean miss</b><span class='time'>Final total 234 (Over)</span></div><span class='more'>Tap for details</span></summary>
 <div class='body'>
 <div><h2>Totals lean</h2><p class='sub' style='margin:0'>Close spread (under)</p></div>
+<div class='sec'><h2>Lineups &amp; injuries</h2><p class='sub live-line' style='margin:0 0 8px'></p>
+<div class='lu lu-starters'><div><h3>BOS · <span style='color:var(--muted);font-weight:500'>Probable starters (last game)</span></h3><ul><li>Posted once the team has played this season.</li></ul></div><div><h3>DET · <span style='color:var(--muted);font-weight:500'>Probable starters (last game)</span></h3><ul><li>Posted once the team has played this season.</li></ul></div></div>
+<div class='lu lu-injuries' style='margin-top:10px'><div><h3>BOS injuries</h3><ul><li>None reported.</li></ul></div><div><h3>DET injuries</h3><ul><li>None reported.</li></ul></div></div></div>
 <div class='sec'><h2>Fatigue &amp; travel</h2>
 <div class='legend'><span><i style='background:var(--amber)'></i>BOS</span><span><i style='background:var(--blue)'></i>DET</span></div>
 <div class='meter'><div class='row'><b>Time zones crossed, 10 days</b><span>0 vs 0</span></div><div class='bar'><div style='width:0%;background:var(--amber)'></div></div><div class='bar'><div style='width:0%;background:var(--blue)'></div></div></div>
@@ -81,21 +94,25 @@ th{color:var(--muted);font-weight:600}
 <div class='meter'><div class='row'><b>Games in last 7 days</b><span>0 vs 0</span></div><div class='bar'><div style='width:0%;background:var(--amber)'></div></div><div class='bar'><div style='width:0%;background:var(--blue)'></div></div></div>
 <div class='meter'><div class='row'><b>Days of rest</b><span>– vs –</span></div><div class='bar'><div style='width:0%;background:var(--amber)'></div></div><div class='bar'><div style='width:0%;background:var(--blue)'></div></div></div>
 </div>
-<div class='sec'><h2>Officials</h2><p class='sub' style='margin:0'>Crew not posted yet (usually the morning of the game).</p></div>
+<div class='sec'><h2>Officials</h2><p class='sub officials' style='margin:0'>Crew not posted yet (usually the morning of the game).</p></div>
 <div class='sec'><h2>Shooting form</h2><div class='kv'>
 <div><span>BOS 3P% vs season, last 3</span><b>–</b></div>
 <div><span>DET 3P% vs season, last 3</span><b>–</b></div></div></div>
 <div class='sec'><h2>Next Man Up</h2><div class='nmu'><div><h3>BOS</h3><p>Ratings start after the team&#x27;s first game this season.</p></div><div><h3>DET</h3><p>Ratings start after the team&#x27;s first game this season.</p></div></div></div>
 <div class='sec'><p class='sub' style='margin:0'>Locked at tip-off · line from Draft Kings</p></div>
-</div></details><details class='card'><summary>
+</div></details><details class='card' data-game-id='401909089' data-home='NYK' data-away='PHI'><summary>
 <div class='row'><div class='match'>PHI <small>at</small> NYK</div>
 <div class='time' data-utc='2026-10-20T23:00Z'></div></div>
 <div class='row'><div class='line'><div><span>Spread</span> NYK -4.5</div><div><span>Total</span> 231.5</div></div>
 <span class='badge none'>NO LEAN</span></div>
 
+<div class='live live-status'>11:41 - 2nd · PHI 23.0, NYK 25.0</div>
 <span class='more'>Tap for details</span></summary>
 <div class='body'>
 <div><h2>Totals lean</h2><p class='sub' style='margin:0'>No totals signals in this game.</p></div>
+<div class='sec'><h2>Lineups &amp; injuries</h2><p class='sub live-line' style='margin:0 0 8px'></p>
+<div class='lu lu-starters'><div><h3>PHI · <span style='color:var(--muted);font-weight:500'>Starters</span></h3><ul><li>LeBron James<span style='color:var(--muted)'> · F</span></li><li>Joel Embiid<span style='color:var(--muted)'> · C</span></li><li>Jaylen Brown<span style='color:var(--muted)'> · G</span></li><li>Tyrese Maxey<span style='color:var(--muted)'> · G</span></li><li>VJ Edgecombe<span style='color:var(--muted)'> · G</span></li></ul></div><div><h3>NYK · <span style='color:var(--muted);font-weight:500'>Starters</span></h3><ul><li>OG Anunoby<span style='color:var(--muted)'> · F</span></li><li>Karl-Anthony Towns<span style='color:var(--muted)'> · C</span></li><li>Josh Hart<span style='color:var(--muted)'> · G</span></li><li>Mikal Bridges<span style='color:var(--muted)'> · G</span></li><li>Jalen Brunson<span style='color:var(--muted)'> · G</span></li></ul></div></div>
+<div class='lu lu-injuries' style='margin-top:10px'><div><h3>PHI injuries</h3><ul><li>None reported.</li></ul></div><div><h3>NYK injuries</h3><ul><li>None reported.</li></ul></div></div></div>
 <div class='sec'><h2>Fatigue &amp; travel</h2>
 <div class='legend'><span><i style='background:var(--amber)'></i>PHI</span><span><i style='background:var(--blue)'></i>NYK</span></div>
 <div class='meter'><div class='row'><b>Time zones crossed, 10 days</b><span>0 vs 0</span></div><div class='bar'><div style='width:0%;background:var(--amber)'></div></div><div class='bar'><div style='width:0%;background:var(--blue)'></div></div></div>
@@ -103,21 +120,25 @@ th{color:var(--muted);font-weight:600}
 <div class='meter'><div class='row'><b>Games in last 7 days</b><span>0 vs 0</span></div><div class='bar'><div style='width:0%;background:var(--amber)'></div></div><div class='bar'><div style='width:0%;background:var(--blue)'></div></div></div>
 <div class='meter'><div class='row'><b>Days of rest</b><span>– vs –</span></div><div class='bar'><div style='width:0%;background:var(--amber)'></div></div><div class='bar'><div style='width:0%;background:var(--blue)'></div></div></div>
 </div>
-<div class='sec'><h2>Officials</h2><p class='sub' style='margin:0'>Crew not posted yet (usually the morning of the game).</p></div>
+<div class='sec'><h2>Officials</h2><p class='sub officials' style='margin:0'>Crew not posted yet (usually the morning of the game).</p></div>
 <div class='sec'><h2>Shooting form</h2><div class='kv'>
 <div><span>PHI 3P% vs season, last 3</span><b>–</b></div>
 <div><span>NYK 3P% vs season, last 3</span><b>–</b></div></div></div>
 <div class='sec'><h2>Next Man Up</h2><div class='nmu'><div><h3>PHI</h3><p>Ratings start after the team&#x27;s first game this season.</p></div><div><h3>NYK</h3><p>Ratings start after the team&#x27;s first game this season.</p></div></div></div>
-<div class='sec'><p class='sub' style='margin:0'>Updates until tip-off · line from DraftKings</p></div>
-</div></details><details class='card'><summary>
+<div class='sec'><p class='sub' style='margin:0'>Locked at tip-off · line from DraftKings</p></div>
+</div></details><details class='card' data-game-id='401909090' data-home='SAS' data-away='OKC'><summary>
 <div class='row'><div class='match'>OKC <small>at</small> SAS</div>
 <div class='time' data-utc='2026-10-21T01:30Z'></div></div>
 <div class='row'><div class='line'><div><span>Spread</span> SAS +1.5</div><div><span>Total</span> 230.5</div></div>
 <span class='badge under'>UNDER</span></div>
 
+<div class='live live-status'></div>
 <span class='more'>Tap for details</span></summary>
 <div class='body'>
 <div><h2>Totals lean</h2><p class='sub' style='margin:0'>Close spread (under)</p></div>
+<div class='sec'><h2>Lineups &amp; injuries</h2><p class='sub live-line' style='margin:0 0 8px'></p>
+<div class='lu lu-starters'><div><h3>OKC · <span style='color:var(--muted);font-weight:500'>Probable starters (last game)</span></h3><ul><li>Posted once the team has played this season.</li></ul></div><div><h3>SAS · <span style='color:var(--muted);font-weight:500'>Probable starters (last game)</span></h3><ul><li>Posted once the team has played this season.</li></ul></div></div>
+<div class='lu lu-injuries' style='margin-top:10px'><div><h3>OKC injuries</h3><ul><li><span class='st out'>Out</span>Thomas Sorber · Right Leg Surgery</li><li><span class='st out'>Out</span>Nikola Topic · Torso Surgery</li><li><span class='st out'>Out</span>Otega Oweh · Right Leg Surgery</li></ul></div><div><h3>SAS injuries</h3><ul><li><span class='st out'>Out</span>Tobias Harris · Left Leg Strain</li><li><span class='st out'>Out</span>Jayden Quaintance · Right Leg Surgery</li></ul></div></div></div>
 <div class='sec'><h2>Fatigue &amp; travel</h2>
 <div class='legend'><span><i style='background:var(--amber)'></i>OKC</span><span><i style='background:var(--blue)'></i>SAS</span></div>
 <div class='meter'><div class='row'><b>Time zones crossed, 10 days</b><span>0 vs 0</span></div><div class='bar'><div style='width:0%;background:var(--amber)'></div></div><div class='bar'><div style='width:0%;background:var(--blue)'></div></div></div>
@@ -125,13 +146,53 @@ th{color:var(--muted);font-weight:600}
 <div class='meter'><div class='row'><b>Games in last 7 days</b><span>0 vs 0</span></div><div class='bar'><div style='width:0%;background:var(--amber)'></div></div><div class='bar'><div style='width:0%;background:var(--blue)'></div></div></div>
 <div class='meter'><div class='row'><b>Days of rest</b><span>– vs –</span></div><div class='bar'><div style='width:0%;background:var(--amber)'></div></div><div class='bar'><div style='width:0%;background:var(--blue)'></div></div></div>
 </div>
-<div class='sec'><h2>Officials</h2><p class='sub' style='margin:0'>Crew not posted yet (usually the morning of the game).</p></div>
+<div class='sec'><h2>Officials</h2><p class='sub officials' style='margin:0'>Crew not posted yet (usually the morning of the game).</p></div>
 <div class='sec'><h2>Shooting form</h2><div class='kv'>
 <div><span>OKC 3P% vs season, last 3</span><b>–</b></div>
 <div><span>SAS 3P% vs season, last 3</span><b>–</b></div></div></div>
 <div class='sec'><h2>Next Man Up</h2><div class='nmu'><div><h3>OKC</h3><p>Ratings start after the team&#x27;s first game this season.</p></div><div><h3>SAS</h3><p>Ratings start after the team&#x27;s first game this season.</p></div></div></div>
 <div class='sec'><p class='sub' style='margin:0'>Updates until tip-off · line from DraftKings</p></div>
 </div></details>
+<script>
+(function(){
+  var cards=[].slice.call(document.querySelectorAll('details.card[data-game-id]'));
+  if(!cards.length)return;
+  var MAP={GS:'GSW',NO:'NOP',NY:'NYK',SA:'SAS',UTAH:'UTA',WSH:'WAS'};
+  function ab(x){return MAP[x]||x;}
+  function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;}
+  function list(title,items){var d=el('div');d.appendChild(el('h3',null,title));var ul=el('ul');items.forEach(function(i){ul.appendChild(i);});d.appendChild(ul);return d;}
+  var ok=0,fail=0;
+  function done(){var b=document.getElementById('livebar');if(!b)return;
+    if(ok)b.textContent='Live from ESPN · refreshed '+new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})+'. Leans come from the last hourly update.';
+    else if(fail)b.textContent='Showing the latest hourly update (live refresh unavailable in this browser).';}
+  var pending=cards.length;
+  cards.forEach(function(card){
+    fetch('https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event='+card.dataset.gameId)
+    .then(function(r){if(!r.ok)throw 0;return r.json();})
+    .then(function(js){
+      ok++;
+      var comp=((js.header||{}).competitions||[{}])[0]||{};var st=((comp.status||{}).type)||{};
+      var sc={};(comp.competitors||[]).forEach(function(c){sc[ab((c.team||{}).abbreviation)]=c.score;});
+      var ls=card.querySelector('.live-status');
+      if(ls&&st.state&&st.state!=='pre'){ls.textContent=(st.shortDetail||'')+' · '+card.dataset.away+' '+(sc[card.dataset.away]||0)+', '+card.dataset.home+' '+(sc[card.dataset.home]||0);}
+      var pc=(js.pickcenter||[])[0];var ll=card.querySelector('.live-line');
+      if(pc&&ll&&st.state==='pre'){ll.textContent='Current line: '+(pc.details||'–')+' · total '+(pc.overUnder!=null?pc.overUnder:'–')+(pc.provider&&pc.provider.name?' ('+pc.provider.name+')':'');}
+      var offs=((js.gameInfo||{}).officials||[]).map(function(o){return o.displayName;});
+      var oe=card.querySelector('.officials');if(oe&&offs.length)oe.textContent=offs.join(', ');
+      var starters={};((js.boxscore||{}).players||[]).forEach(function(t){var team=ab((t.team||{}).abbreviation);
+        (((t.statistics||[])[0]||{}).athletes||[]).forEach(function(a){if(a.starter){(starters[team]=starters[team]||[]).push(a.athlete.displayName+' · '+(((a.athlete.position||{}).abbreviation)||''));}});});
+      if(Object.keys(starters).length){var box=card.querySelector('.lu-starters');if(box){box.innerHTML='';
+        [card.dataset.away,card.dataset.home].forEach(function(t){box.appendChild(list(t+' · Starters',(starters[t]||[]).map(function(n){return el('li',null,n);})));});}}
+      if(js.injuries&&js.injuries.length){var ib=card.querySelector('.lu-injuries');if(ib){ib.innerHTML='';
+        var by={};js.injuries.forEach(function(g){var t=ab(((g.team||{}).abbreviation)||'');(g.injuries||[]).forEach(function(i){
+          var s=(typeof i.status==='object'&&i.status)?(i.status.name||i.status.type):i.status;var li=el('li');
+          var c=String(s||'').toLowerCase();li.appendChild(el('span','st '+((c==='out'||c==='doubtful')?'out':(c?'q':'')),s||''));
+          li.appendChild(document.createTextNode(((i.athlete||{}).displayName||'')+(i.shortComment?' · '+i.shortComment:'')));(by[t]=by[t]||[]).push(li);});});
+        [card.dataset.away,card.dataset.home].forEach(function(t){var items=by[t]||[el('li',null,'None reported.')];ib.appendChild(list(t+' injuries',items));});}}
+    }).catch(function(){fail++;}).then(function(){if(--pending===0)done();});
+  });
+})();
+</script>
 <p class='foot'>Information and history only, not betting advice. 21+. Gambling problem? Call 1-800-GAMBLER.<br>
 Live data: ESPN. Historical data: hoopR-nba-data (SportsDataverse), CC BY 4.0.</p></div>
 <script>document.querySelectorAll('[data-utc]').forEach(function(e){var d=new Date(e.dataset.utc);
